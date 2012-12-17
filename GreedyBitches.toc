@@ -1,0 +1,9 @@
+## Interface: 30200
+
+## Title: GreedyBitches
+## Notes: Automatic loot roller
+
+externals\events.lua
+externals\itemid.lua
+
+GreedyBitches.lua

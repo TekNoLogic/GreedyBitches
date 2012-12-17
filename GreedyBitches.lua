@@ -14,6 +14,6 @@ ns.RegisterEvent('START_LOOT_ROLL', function(event, rollid)
 	local link = GetLootRollItemLink(rollid)
 	local id = ns.ids[link]
 
-	if id and PASSLIST:find(id) then return RollOnLoot(rollid, 0) end
+	if id and PASSLIST:find("%s"..id.."%s") then return RollOnLoot(rollid, 0) end
 	if quality == 2 and not bop then return RollOnLoot(rollid, 2) end
 end)
